@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffdb99"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tipcalculator.MainActivity" >
+    
+
+    <EditText
+        android:id="@+id/enterAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="@string/enterAmount"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="49dp"
+        android:layout_marginLeft="18dp"
+        android:textSize="20sp"
+        android:text="@string/tip" />
+
+    <Button
+        android:id="@+id/tipOption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tipOption1"
+        android:layout_alignBottom="@+id/tipOption1"
+        android:layout_alignLeft="@+id/tipAmount"
+        android:layout_marginLeft="16dp"
+        android:background="#A6D785"
+        android:onClick="secondTipOption"
+        android:text="@string/tipOption2" />
+
+    <EditText
+        android:id="@+id/userDesireTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/enterYourOwnTip"
+        android:layout_alignBottom="@+id/enterYourOwnTip"
+        android:layout_alignRight="@+id/tipOption3"
+        android:layout_toRightOf="@+id/enterYourOwnTip"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/userDesireTip" />
+
+    <TextView
+        android:id="@+id/ChooseTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tipOption1"
+        android:layout_below="@+id/enterAmount"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:textSize="20sp"
+        android:text="@string/ChooseTip" />
+        
+
+    <Button
+        android:id="@+id/tipOption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tip"
+        android:layout_below="@+id/ChooseTip"
+        android:layout_marginTop="32dp"
+         android:background="#A6D785"
+        android:onClick="firstTipOption"
+        android:text="@string/tipOption1" />
+
+    <TextView
+        android:id="@+id/enterYourOwnTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tipOption1"
+        android:layout_below="@+id/tipOption2"
+        android:layout_marginTop="38dp"
+        android:text="@string/enterYourOwnTip"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tipOption2"
+        android:layout_below="@+id/userDesireTip"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/tipOption3"
+        android:background="#87CEFA"
+        android:textSize="20sp" 
+        android:onClick="calculateTip"
+        android:text="@string/calculate" />
+
+    <TextView
+        android:id="@+id/percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/calculate"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/userDesireTip"
+        android:text="@string/percentage" />
+
+    <EditText
+        android:id="@+id/tipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tip"
+        android:layout_alignBottom="@+id/tip"
+        android:layout_toRightOf="@+id/tipOption1"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/tipAmount" />
+
+    <Button
+        android:id="@+id/tipOption3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/enterYourOwnTip"
+        android:layout_toRightOf="@+id/enterYourOwnTip"
+        android:background="#A6D785"
+        android:onClick="thirdTipOption"
+        android:text="@string/tipOption3" />
+
+</RelativeLayout>
