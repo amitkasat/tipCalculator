@@ -98,7 +98,7 @@
         android:layout_marginTop="18dp"
         android:layout_toLeftOf="@+id/tipOption3"
         android:background="#87CEFA"
-        android:textSize="20sp" 
+        android:textSize="18sp" 
         android:onClick="calculateTip"
         android:text="@string/calculate" />
 
@@ -112,17 +112,6 @@
         android:layout_toRightOf="@+id/userDesireTip"
         android:text="@string/percentage" />
 
-    <EditText
-        android:id="@+id/tipAmount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/tip"
-        android:layout_alignBottom="@+id/tip"
-        android:layout_toRightOf="@+id/tipOption1"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:text="@string/tipAmount" />
-
     <Button
         android:id="@+id/tipOption3"
         android:layout_width="wrap_content"
@@ -132,5 +121,19 @@
         android:background="#A6D785"
         android:onClick="thirdTipOption"
         android:text="@string/tipOption3" />
+
+    <EditText
+        android:id="@+id/tipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tip"
+        android:layout_alignBottom="@+id/tip"
+        android:layout_toRightOf="@+id/tipOption1"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/tipAmount" >
+
+        <requestFocus />
+    </EditText>
 
 </RelativeLayout>

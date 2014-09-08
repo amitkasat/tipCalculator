@@ -15,7 +15,7 @@ public class MainActivity extends Activity {
 	private EditText enterAmount;
 	private TextView tipAmount;
 	private EditText userDesireTip;
-	private String dollar = "$";
+	private char dollar = '$';
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
